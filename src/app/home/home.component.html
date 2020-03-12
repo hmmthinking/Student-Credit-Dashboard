@@ -1,0 +1,95 @@
+<!--TODO: make mobile friendly-->
+<div (window:resize)="onResize($event)" class="container-fluid" *ngIf="userLoaded">
+    <!--bootstrap row-->
+    <div class="row">
+        <div id="holder" class="col-lg-12 d-flex align-items-stretch">
+            <!--overview column-->
+            <div class="col-lg-6 col-sm-12">
+                <h3 class="titleFont">Hello, {{user.firstName}}!</h3>
+                <mdb-card id="overview-card">
+                    <mdb-card-body>
+                        <mdb-card-title>
+                            <div class="titleFont" style="text-align: center">
+                                <h4>Student Overview</h4>
+                            </div>
+                        </mdb-card-title>
+                        <mdb-card-text class="bodyFont">
+                            <ul class="cardList">
+                                <li>Student: <i>{{user.firstName}} {{user.lastName}}</i></li>
+                                <li>Advisor: <a [routerLink]="['/instructor']" style="cursor:pointer"><i>{{user.advisor}}</i>
+                                </a></li>
+                                <!--TODO: Add GPA to user model-->
+                                <li>GPA: <i>4.1</i></li>
+                                <li>Major: <i>{{user.major}}</i></li>
+                                <li>Declared On: <i>{{user.majorDeclaredOn}}</i></li>
+                                <!--TODO: Make minor information only display if student has a minor-->
+                                <li>Minor: <i>{{user.minor}}</i></li>
+                                <li>Declared On: <i>{{user.minorDeclaredOn}}</i></li>
+                                <li>Expected Graduation: <i>{{user.expectedGraduation}}</i></li>
+                            </ul>
+                        </mdb-card-text>
+                    </mdb-card-body>
+                </mdb-card>
+            </div>
+            <!--semester column-->
+            <div class="col-lg-6 col-sm-12">
+                <mdb-card id="semester-card" style="height: 100%">
+                    <mdb-card-body>
+                        <mdb-card-title>
+                            <div class="titleFont" style="text-align: center;">
+                                <h4>Credit Overview</h4>
+                            </div>
+                        </mdb-card-title>
+                        <mdb-card-text>
+                            <div class="row">
+                                <div class="col-lg-4 bodyFont" style="color: black">
+                                    <span>
+                                        <h6>Credits Taken:</h6>
+                                        <h3>{{this.creditsCompleted}}/{{user.totalCreditsRequired}}</h3>
+                                    </span>
+                                    <!--Credits are calculated on load-->
+                                    <h6>Completed: {{this.creditsCompleted}}</h6>
+                                    <h6>In Progress: {{this.creditsInProgress}}</h6>
+                                    <h6>Unfulfilled: {{this.creditsLeft}}</h6>
+                                </div>
+                                <div class="col-lg-8 bodyFont" style="width: 100%; height: 100%">
+                                    <google-chart class="p-0 m-0" [data]="pieChart" (chartError)="this.error($event)" (chartReadyOneTime)="this.ready($event)"></google-chart>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-8 bodyFont">
+
+                                </div>
+                            </div>
+                        </mdb-card-text>
+                    </mdb-card-body>
+                </mdb-card>
+            </div>
+        </div>
+    </div>
+    <!--bootstrap row-->
+    <div class="row">
+        <!--class table-->
+        <div class="col-12">
+            <!-- <table mdbTable striped="true" *ngIf="userLoaded | async"> -->
+                <table mdbTable striped="true">
+                <thead>
+                    <tr>
+                        <!--All strings in the tableHead array get output across the top row-->
+                        <th class="titleFont" *ngFor="let head of tableHead" scope="col">{{head}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--see filter.pipe.ts for info on how the filter works!-->
+                    <tr mdbTableCol *ngFor="let class of this.user.classes | filter: 1">
+                        <td class="bodyFont" scope="row">{{class?.courseNum}}</td>
+                        <td class="bodyFont">{{class?.courseName}}</td>
+                        <td class="bodyFont"><a [routerLink]="['/instructor']" style="color: blue;">{{class?.instructor}}</a></td>
+                        <td class="bodyFont">{{class?.creditHours}}</td>
+                        <td class="bodyFont">{{class?.days}}</td>
+                        <td class="bodyFont">{{class?.time}}</td>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

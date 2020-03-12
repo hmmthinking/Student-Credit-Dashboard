@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto&display=swap'); // here is where we get the fonts I like from Google Fonts
+
+.titleFont { 
+    font-family: 'Libre Baskerville', serif;
+}
+
+.bodyFont {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa {
+    display: inline;
+}
+
+tbody tr:hover {
+    background-color: #999999 !important;
+    transition-duration: .5s;
+}

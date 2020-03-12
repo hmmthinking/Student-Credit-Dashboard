@@ -1,0 +1,12 @@
+<nav class="navbar navbar-dark mb-2" style="background-color: #0069aa;">
+    <h4 [routerLink]="['/home']" style="cursor: pointer; color: white;" class="bodyFont m-1">Dashboard</h4>
+    <button type="button" class="btn justify-content-end" (click)="this.openNav()"><i class="fas fa-bars" style="color: white; border-color: transparent;"></i></button>
+  </nav>
+<!--Sidebar-->
+<div id="sidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="this.closeNav()">&times;</a>
+  <a><span [routerLink]="['home']">Home</span></a>
+  <a><span [routerLink]="['audit']">Audit</span></a>
+  <hr>
+  <a><span class="fas fa-question-circle" style="justify-content: center; color: #fed104;"></span></a>
+</div>

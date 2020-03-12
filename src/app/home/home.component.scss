@@ -1,0 +1,24 @@
+#overview-card, #semester-card {
+    height: 40vh;
+}
+
+.cardList { // the list of student details
+    list-style: none;
+    columns: 2;
+    line-height: 36px;
+}
+
+@media (max-width: 768px) {
+  #holder {
+      display: block !important;
+  }
+
+  mdb-card{
+      margin-top: 5px;
+  }
+}
+@media (min-width: 769px) {
+    #holder {
+        display: flex;
+    }
+}

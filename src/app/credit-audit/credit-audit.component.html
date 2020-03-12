@@ -1,0 +1,24 @@
+<div class="container-fluid" *ngIf="userLoaded">
+    <h3 class="titleFont">Audit Degree</h3>
+    <div class="col-md-12 d-flex justify-content-center" style="background-color: lightgray; border-radius: 10px; box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px;">
+        <expandable-list style="background-color: lightgray; border-radius: 10px;">
+            <expandable-list-item style="background-color: lightgray; border-radius: 10px;">
+                <span title class="titleFont">Computer Science </span>
+                <span item class="bodyFont"> <i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Programming I')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Programming I')"></i>CS110 Programming I</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Programming II')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Programming II')"></i>CS111 Programming II</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Data Structures')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Data Structures')"></i>CS210 Data Structures</span>
+                <span item class="bodyFont"> <i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Computers And Ethics')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Computers And Ethics')"></i>CS220 Computers And Ethics</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Systems Analysis')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('System Analysis')"></i>CS312 System Analysis</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Operating Systems')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Operating Systems')"></i>CS320 Operating Systems</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Theory of Computation')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Theory of Computation')"></i>CS330 Theory of Computation</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Artificial Intelligence')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Artificial Intelligence')"></i>CS335 Artificial Intelligence</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Computer Modeling')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Computer Modeling & Simulation')"></i>CS351 Computer Modeling & Simulation</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Networking')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Networking')"></i>CS370 Networking</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Computer Organization')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Computer Organization')"></i>CS385 Computer Organization</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Web And Mobile Apps')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Web And Mobile Apps')"></i>CS420 Web And Mobile Apps</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Senior Seminar I')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Senior Seminar I')"></i>CS497 Senior Seminar I</span>
+                <span item class="bodyFont"><i class="fas fa-check checkmark" *ngIf="this.checkIfClassTaken('Senior Project')"></i><i class="fas fa-check pendingCheckmark" *ngIf="this.checkIfClassInProgress('Senior Seminar II')"></i>CS498 Senior Seminar II / Senior Project</span>
+            </expandable-list-item>
+        </expandable-list>
+    </div>
+</div>

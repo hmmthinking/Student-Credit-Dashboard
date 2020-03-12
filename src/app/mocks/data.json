@@ -1,0 +1,287 @@
+{
+    "user" : [ {
+        "id" : 1,
+        "firstName" : "FirstName",
+        "lastName" : "LastName",
+        "classes" : [
+            {
+                "instructor" : "Dr. Jannett Williams",
+                "courseName" : "Programming I",
+                "courseNum" : "CS110",
+                "creditHours" : 3,
+                "classStatus" : 2,
+                "yearTaken" : "2016",
+                "semesterTaken" : "Fall"
+            },
+            {
+                "instructor" : "Dr. Jannett Williams",
+                "courseName" : "Programming II",
+                "courseNum" : "CS111",
+                "creditHours" : 3,
+                "classStatus" : 2,
+                "yearTaken" : "2016",
+                "semesterTaken" : "Spring"
+            },
+            {
+                "instructor" : "Dr. Chris Tiahrt",
+                "courseName" : "Data Structures",
+                "courseNum" : "CS210",
+                "creditHours" : 3,
+                "classStatus" : 2,
+                "yearTaken" : "2017",
+                "semesterTaken" : "Fall"
+            },
+            {
+                "instructor" : "Dr. Chris Tiahrt",
+                "courseName" : "Computers & Ethics",
+                "courseNum" : "CS220",
+                "creditHours" : 3,
+                "classStatus" : 2,
+                "yearTaken" : "2017",
+                "semesterTaken" : "Fall"
+            },
+            {
+                "instructor" : "Dr. Chris Tiahrt",
+                "courseName" : "Systems Analysis",
+                "courseNum" : "CS312",
+                "creditHours" : 3,
+                "classStatus" : 1,
+                "location" : "S522",
+                "time" : "12:30-2PM",
+                "days":"T/TH",
+                "yearTaken" : "",
+                "semesterTaken" : ""
+            },
+            {
+                "instructor" : "Dr. Jannett Williams",
+                "courseName" : "Theory of Computation",
+                "courseNum" : "CS330",
+                "creditHours" : 3,
+                "classStatus" : 1,
+                "location" : "S522",
+                "time" : "8-9AM",
+                "days" : "M/W/F",
+                "yearTaken" : "",
+                "semesterTaken" : ""
+            },
+            {
+                "instructor" : "Dr. Chris Tiahrt",
+                "courseName" : "Artificial Intelligence",
+                "courseNum" : "CS335",
+                "creditHours" : 3,
+                "classStatus" : 1,
+                "location" : "S522",
+                "time" : "9-10AM",
+                "days":"M/W/F",
+                "yearTaken" : "",
+                "semesterTaken" : ""
+            },
+            {
+                "instructor" : "Dr. Chris Tiahrt",
+                "courseName" : "Computer Modeling & Simulation",
+                "courseNum" : "CS351",
+                "creditHours" : 3,
+                "classStatus" : 1,
+                "location" : "S522",
+                "time" : "9:30-10:50AM",
+                "days":"T/TH",
+                "yearTaken" : "",
+                "semesterTaken" : ""
+            }
+        ],
+        "advisor" : "Dr. Chris Tiahrt",
+        "major" : "Computer Science",
+        "majorDeclaredOn" : "May 14, 2016",
+        "minor" : "n/a",
+        "minorDeclaredOn" : "n/a",
+        "status" : "Senior",
+        "expectedGraduation" : "December 2019",
+        "totalCreditsRequired" : "128"
+    }
+    ],
+    "class_list" : [
+        {
+            "id" : 1,
+            "instructor" : "Dr. Jannett Williams",
+            "courseName" : "Programming I",
+            "courseNum" : "CS110",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "2:00PM-3:30PM",
+            "days" : "T/TH",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 2,
+            "instructor" : "Dr. Jannett Williams",
+            "courseName" : "Programming II",
+            "courseNum" : "CS111",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 3,
+            "instructor" : "Dr. Chris Tiahrt",
+            "courseName" : "Data Structures",
+            "courseNum" : "CS210",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 4,
+            "instructor" : "Dr. Chris Tiahrt",
+            "courseName" : "Computers & Ethics",
+            "courseNum" : "CS220",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 5,
+            "instructor" : "Dr. Chris Tiahrt",
+            "courseName" : "System Analysis",
+            "courseNum" : "CS312",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 6,
+            "instructor" : "Dr. Chris Tiahrt",
+            "courseName" : "Operating Systems",
+            "courseNum" : "CS320",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 7,
+            "instructor" : "Dr. Jannett Williams",
+            "courseName" : "Theory of Computation",
+            "courseNum" : "CS330",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "8-9AM",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 8,
+            "instructor" : "Dr. Chris Tiahrt",
+            "courseName" : "Artificial Intelligence",
+            "courseNum" : "CS335",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "9-10AM",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 9,
+            "instructor" : "Dr. Chris Tiahrt",
+            "courseName" : "Computer Modeling & Simulation",
+            "courseNum" : "CS351",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 10,
+            "instructor" : "Mr. Matt Monsour",
+            "courseName" : "Networking",
+            "courseNum" : "CS370",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 11,
+            "instructor" : "Dr. Chris Tiahrt",
+            "courseName" : "Computer Organization",
+            "courseNum" : "CS385",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 12,
+            "instructor" : "Dr. Chris Tiahrt",
+            "courseName" : "Web And Mobile Apps",
+            "courseNum" : "CS420",
+            "creditHours" : 3,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        },
+        {
+            "id" : 13,
+            "instructor" : "Dr. Chris Tiahrt",
+            "courseName" : "Senior Seminar I",
+            "courseNum" : "CS497",
+            "creditHours" : 1,
+            "classStatus" : "1",
+            "location" : "S522",
+            "time" : "",
+            "yearTaken" : "",
+            "semesterTaken" : ""
+        }
+    ],
+    "instructor_list" : [ 
+        {
+            "id": 1,
+            "name" : "Chris Tiahrt",
+            "description" : "Lorem ipsum dolor sit amet",
+            "phoneNumber" : "123-456-7890",
+            "email" : "chrisat@sample.edu",
+            "officeHoursMon" : "",
+            "officeHoursTue" : "",
+            "officeHoursWed" : "",
+            "officeHoursThurs" : "",
+            "officeHoursFri" : ""
+        },
+        {
+            "id": 1,
+            "name" : "Jannett Williams",
+            "description" : "Lorem ipsum dolor sit amet this will be filled with example text",
+            "phoneNumber" : "321-546-8790",
+            "email" : "jannett.williams@sample.edu",
+            "officeHoursMon" : "4:30PM - 5PM",
+            "officeHoursTue" : "",
+            "officeHoursWed" : "",
+            "officeHoursThurs" : "",
+            "officeHoursFri" : ""
+        }
+    ]
+}
